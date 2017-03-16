@@ -1,0 +1,36 @@
+user_GetAuth:
+    path:     /getAuth/{equipement}/{badge}
+    defaults: { _controller: UserBundle:Default:getAuth }
+
+user_writelogin:
+    path:     /writelogin/{equipement}/{user}
+    defaults: { _controller: UserBundle:Default:writelogin }
+
+user_writelogout:
+    path:     /writelogout/{equipement}/{user}
+    defaults: { _controller: UserBundle:Default:writelogout }
+
+user_getAccess:
+    path:     /getAccess/{badge}
+    defaults: { _controller: UserBundle:Default:getAccess }
+
+user_getUser:
+    path:     /getUser/{userId}
+    defaults: { _controller: UserBundle:Default:getUser }
+
+user_writeUser:
+    path:     /writeUser
+    defaults: { _controller: UserBundle:Default:getUser }
+
+user_createBadge:
+    path:     /createBadge/{userId}/{badge}
+    defaults: { _controller: UserBundle:Default:createBadge }
+
+user_writequip:
+    path:     /writequip
+    defaults: { _controller: UserBundle:Default:writequip }
+
+user_boitierquip:
+    path:     /boitierquip/{IDRpi}/{Idequip}
+    defaults: { _controller: UserBundle:Default:boitierquip }
+
